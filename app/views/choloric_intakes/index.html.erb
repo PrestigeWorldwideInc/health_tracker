@@ -1,2 +1,27 @@
-<h1>CholoricIntakes#index</h1>
-<p>Find me in app/views/choloric_intakes/index.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<h1>Listing choloric_intakes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Calories</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @choloric_intakes.each do |choloric_intake| %>
+      <tr>
+        <td><%= choloric_intake.lsb %></td>
+        <td><%= choloric_intake.date %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Enter Calories Consumed', new_choloric_intakes_post_path %>
+<%= link_to "Back to the Homepage", dashboard_index_path %>
