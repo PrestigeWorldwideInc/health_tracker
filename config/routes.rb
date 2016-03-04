@@ -1,5 +1,6 @@
 resources :step_counts
 resources :weights
+
 Rails.application.routes.draw do
   get 'choloric_intakes/index'
 
