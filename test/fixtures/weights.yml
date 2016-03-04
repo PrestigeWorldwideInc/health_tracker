@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  lsb: 9.99
+  lbs: 9.99
   date: 2016-03-04
 
 two:
-  lsb: 9.99
-  date: 2016-03-04
+  lbs: 9.99
+  date: 2016-03-03

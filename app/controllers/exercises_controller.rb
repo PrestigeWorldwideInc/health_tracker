@@ -38,6 +38,7 @@ class ExercisesController < ApplicationController
       format.html { redirect_to exercises_url, notice: 'Exercise was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
 
   private
     def choloric_intake
