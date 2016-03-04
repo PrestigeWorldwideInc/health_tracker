@@ -4,18 +4,17 @@ Rails.application.routes.draw do
   resources :weights
 
   root 'dashboards#show'
+  
   get 'dashboards/index'
 
   get 'choloric_intakes/index'
-
-  get 'choloric_intakes/index'
-  get 'choloric_intakes/post'
+  post 'choloric_intakes/post'
 
   get 'exercise_types/index'
-  get 'exercise_types/post'
+  post 'exercise_types/post'
 
   get 'exercises/index'
-  get 'exercises/post'
+  post 'exercises/post'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
