@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'choloric_intakes/index'
 
   get 'choloric_intakes/post'
@@ -11,6 +12,11 @@ Rails.application.routes.draw do
 
   get 'exercises/post'
 
+=======
+  
+  resources :step_counts
+  resources :weights
+>>>>>>> 004d447d240afe1e9791c41124620f373738bfea
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
