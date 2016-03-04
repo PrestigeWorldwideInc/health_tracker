@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20160304163152) do
   end
 
   create_table "weights", force: :cascade do |t|
-    t.decimal  "lsb"
+    t.decimal  "lbs"
     t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
