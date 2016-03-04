@@ -1,16 +1,14 @@
 
 Rails.application.routes.draw do
   get 'choloric_intakes/index'
-
   get 'choloric_intakes/post'
 
   get 'exercise_types/index'
-
   get 'exercise_types/post'
 
   get 'exercises/index'
-
   get 'exercises/post'
+
 
   resources :step_counts
   resources :weights
