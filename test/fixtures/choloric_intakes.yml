@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calories: 9.99
+  date: 2016-03-04
+
+two:
+  calories: 9.99
+  date: 2016-03-04

@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'choloric_intakes/index'
+
+  get 'choloric_intakes/post'
+
+  get 'exercise_types/index'
+
+  get 'exercise_types/post'
+
+  get 'exercises/index'
+
+  get 'exercises/post'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

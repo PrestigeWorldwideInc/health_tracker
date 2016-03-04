@@ -1,0 +1,2 @@
+module CholoricIntakesHelper
+end

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  calories_burned_per_minute: 9.99
+  duration: 9.99
+  exercise_type_id: 1
+
+two:
+  calories_burned_per_minute: 9.99
+  duration: 9.99
+  exercise_type_id: 1
