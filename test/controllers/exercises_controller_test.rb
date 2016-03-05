@@ -7,7 +7,7 @@ class ExercisesControllerTest < ActionController::TestCase
   end
 
   test "should get post" do
-    get :post
+    post :post
     assert_response :success
   end
 

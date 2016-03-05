@@ -44,7 +44,7 @@ class ExercisesController < ApplicationController
   end
 
   private
-    def choloric_intake
+    def exercise_params
       params.require(:exercise).permit(:calories_burned_per_minute, :exercise_type_id, :duration)
     end
 

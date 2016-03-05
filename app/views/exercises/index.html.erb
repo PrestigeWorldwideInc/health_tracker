@@ -14,8 +14,9 @@
   <tbody>
     <% @exercises.each do |exercise| %>
       <tr>
-        <td><%= exercise.type %></td>
-        <td><%= link_to 'New', exercises_post_path %></td>
+        <td><%= exercise.calories_burned_per_minute %></td>
+        <td><%= exercise.duration %></td>
+        <td><%= link_to 'New', exercises_path %></td>
       </tr>
     <% end %>
   </tbody>
