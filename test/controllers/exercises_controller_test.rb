@@ -2,13 +2,13 @@ require 'test_helper'
 
 class ExerciseControllerTest < ActionController::TestCase
   setup do
-    @exercise = step_counts(:one)
+    @exercise = exercises(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:step_counts)
+    assert_not_nil assigns(:exercises)
   end
 
   test "should get new" do
@@ -16,15 +16,15 @@ class ExerciseControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create step_count" do
-    assert_difference('StepCount.count') do
-      post :create, step_count: { date: @exercise.date, steps_taken: @exercise.steps_taken }
+  test "should create exercise" do
+    assert_difference('Exercise.count') do
+      post :create, exercise: {calroies_burned_per_minute: @exercise.calroies_burned_per_minute, duration: @exercise.duration, exercise_type: @exercise.exercise_type_id}
     end
 
-    assert_redirected_to step_count_path(assigns(:step_count))
+    assert_redirected_to exercise_path(assigns(:exercise))
   end
 
-  test "should show step_count" do
+  test "should show exercise" do
     get :show, id: @exercise
   end
 
@@ -33,16 +33,16 @@ class ExerciseControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update step_count" do
-    patch :update, id: @exercise, step_count: { date: @exercise.date, steps_taken: @exercise.steps_taken }
-    assert_redirected_to step_count_path(assigns(:step_count))
+  test "should update exercise" do
+    patch :update, id: @exercise, exercise: {calroies_burned_per_minute: @exercise.calroies_burned_per_minute, duration: @exercise.duration, exercise_type: @exercise.exercise_type_id}
+    assert_redirected_to exercise_path(assigns(:exercise))
   end
 
-  test "should destroy step_count" do
-    assert_difference('StepCount.count', -1) do
+  test "should destroy exercise" do
+    assert_difference('Exercise.count', -1) do
       delete :destroy, id: @exercise
     end
 
-    assert_redirected_to step_counts_path
+    assert_redirected_to exercises_path
   end
 end
