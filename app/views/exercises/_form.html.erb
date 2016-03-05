@@ -1,7 +1,7 @@
 <%= form_for(@exercise) do |f| %>
   <% if @exercise.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this weight from being saved:</h2>
 
       <ul>
       <% @exercise.errors.full_messages.each do |message| %>
@@ -12,8 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :calories_per_minute %><br>
-    <%= f.text_field :duration %>
+    <%= f.label :calories_burned_per_minute %><br>
+    <%= f.text_field :calories_burned_per_minute %>
+  </div>
+  <div class="field">
+    <%= f.label :exercise_type_id %><br>
+    <%= f.number_field :exercise_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.number_field :duration %>
   </div>
   <div class="actions">
     <%= f.submit %>

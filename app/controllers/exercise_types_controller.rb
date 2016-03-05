@@ -1,8 +1,11 @@
 class ExerciseTypesController < ApplicationController
+  before_action :set_exercise_type, only: [:show, :edit, :update, :destroy]
   def index
+    @exercise_types = ExerciseType.all
   end
 
-  def post
+  def new
+    @exercise_type = ExerciseType.new
   end
 
   def create

@@ -1,8 +1,11 @@
 class CholoricIntakesController < ApplicationController
+  before_action :set_choloric_intake, only: [:show, :edit, :update, :destroy]
   def index
+    @choloric_intake = CholoricIntake.all
   end
 
-  def post
+  def new
+    @choloric_intake = CholoricIntake.new
   end
 
   def create

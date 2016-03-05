@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160305164757) do
+=======
+ActiveRecord::Schema.define(version: 20160304234937) do
+>>>>>>> 82e94d633debc19ccaebd9fc989ec6b5497f3c47
 
   create_table "choloric_intakes", force: :cascade do |t|
     t.decimal  "calories"

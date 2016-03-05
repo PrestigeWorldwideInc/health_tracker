@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing exercises</h1>
+<h1>Listing Exercises</h1>
 
 <table>
   <thead>
@@ -15,7 +15,7 @@
     <% @exercises.each do |exercise| %>
       <tr>
         <td><%= exercise.type %></td>
-        <td><%= link_to 'Show', exercise %></td>
+        <td><%= link_to 'New', exercises_post_path %></td>
       </tr>
     <% end %>
   </tbody>
@@ -23,5 +23,5 @@
 
 <br>
 
-<%= link_to 'New Exercise', new_exercises_post_path %>
-<%= link_to "Back to the Homepage", dashboard_index_path %>
+<p><%= link_to "Back to the Homepage", root_path %></p>
+<p><%= link_to 'New Exercise', new_exercise_path %><p>

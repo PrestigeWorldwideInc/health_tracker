@@ -1,7 +1,7 @@
 <%= form_for(@choloric_intake) do |f| %>
   <% if @choloric_intake.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@choloric_intake.errors.count, "error") %> prohibited this choloric_intake from being saved:</h2>
+      <h2><%= pluralize(@choloric_intake.errors.count, "error") %> prohibited this weight from being saved:</h2>
 
       <ul>
       <% @choloric_intake.errors.full_messages.each do |message| %>
@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :calories %><br>
-    <%= f.text_field :calories %>
+    <%= f.number_field :calories %>
   </div>
   <div class="field">
     <%= f.label :date %><br>
