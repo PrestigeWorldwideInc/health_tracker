@@ -26,7 +26,6 @@ class ExerciseControllerTest < ActionController::TestCase
 
   test "should show step_count" do
     get :show, id: @exercise
-    assert_response :success
   end
 
   test "should get edit" do

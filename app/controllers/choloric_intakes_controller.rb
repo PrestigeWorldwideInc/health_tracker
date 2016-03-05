@@ -1,5 +1,6 @@
 class CholoricIntakesController < ApplicationController
   before_action :set_choloric_intake, only: [:show, :edit, :update, :destroy]
+
   def index
     @choloric_intake = CholoricIntake.all
   end
@@ -9,7 +10,7 @@ class CholoricIntakesController < ApplicationController
   end
 
   def create
-    @choloric_intake = Choloric_intake.new(choloric_intake_params)
+    @choloric_intake = CholoricIntake.new(choloric_intake_params)
 
     respond_to do |format|
       if @choloric_intake.save
@@ -39,7 +40,7 @@ class CholoricIntakesController < ApplicationController
 
 
   private
-    def choloric_intake
+    def choloric_intake_params
       params.require(:choloric_intake).permit(:calories, :date)
     end
 
