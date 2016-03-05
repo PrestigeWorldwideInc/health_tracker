@@ -1,9 +1,10 @@
 class ExercisesController < ApplicationController
+  before_action :set_exercise, only: [:show, :edit, :update, :destroy]
   def index
     @exercises = Exercise.all
   end
 
-  def post
+  def new
     @exercise = Exercise.new
   end
 

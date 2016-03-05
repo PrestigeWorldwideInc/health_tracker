@@ -1,4 +1,5 @@
 class CholoricIntakesController < ApplicationController
+  before_action :set_choloric_intake, only: [:show, :edit, :update, :destroy]
   def index
   end
 
