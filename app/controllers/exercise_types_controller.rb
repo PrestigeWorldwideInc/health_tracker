@@ -3,6 +3,7 @@ class ExerciseTypesController < ApplicationController
   end
 
   def post
+    @exercise_types = Exercise_type.all
   end
 
   def create

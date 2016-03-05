@@ -3,6 +3,7 @@ class CholoricIntakesController < ApplicationController
   end
 
   def post
+    @choloric_intakes = CholoricIntake.all
   end
 
   def create

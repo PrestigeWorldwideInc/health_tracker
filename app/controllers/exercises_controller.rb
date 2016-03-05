@@ -1,8 +1,10 @@
 class ExercisesController < ApplicationController
   def index
+    @exercises = Exercise.all
   end
 
   def post
+    @exercise = Exercise.new
   end
 
   def create
