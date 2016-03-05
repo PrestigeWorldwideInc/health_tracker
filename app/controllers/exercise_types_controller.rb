@@ -1,5 +1,6 @@
 class ExerciseTypesController < ApplicationController
   before_action :set_exercise_type, only: [:show, :edit, :update, :destroy]
+  
   def index
     @exercise_types = ExerciseType.all
   end
@@ -36,8 +37,8 @@ class ExerciseTypesController < ApplicationController
   end
 
   private
-    def exercise_type
-      params.require(:exercise_type).permit(:type)
+    def exercise_type_params
+      params.require(:exercise_type).permit(:name)
     end
 
     def set_exercise_type

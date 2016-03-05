@@ -2,7 +2,7 @@ require 'test_helper'
 
 class ExerciseTypesControllerTest < ActionController::TestCase
   setup do
-    @exercise_type = exercise_type(:one)
+    @exercise_type = exercise_types(:one)
   end
   test "should get index" do
     get :index
@@ -17,7 +17,7 @@ class ExerciseTypesControllerTest < ActionController::TestCase
 
   test "should create exercise_type" do
     assert_difference('ExerciseType.count') do
-      post :create, exercise_type: { type: @exercise_type.type }
+      post :create, exercise_type: { name: @exercise_type.name }
     end
 
     assert_redirected_to exercise_type_path(assigns(:exercise_type))
