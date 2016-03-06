@@ -51,7 +51,7 @@ class ExercisesController < ApplicationController
 
   private
     def exercise_params
-      params.require(:exercise).permit(:calories_burned_per_minute, :duration, :exercise_type_id, :name)
+      params.require(:exercise).permit(:calories_burned, :duration, :exercise_type_id, :name)
     end
 
     def set_exercise

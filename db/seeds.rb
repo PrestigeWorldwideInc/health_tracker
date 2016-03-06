@@ -14,7 +14,7 @@ ExerciseType.create(name: "Cardio")
 ExerciseType.create(name: "Weight Training")
 
 10.times do |i|
-  Exercise.create(calories_burned_per_minute: rand(9.99..70.0), exercise_type_id: rand(1..2), duration: rand(1.0..60.0))
+  Exercise.create(calories_burned: rand(9.99..70.0), exercise_type_id: rand(1..2), duration: rand(1.0..60.0))
 end
 
 10.times do |i|
