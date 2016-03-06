@@ -13,7 +13,7 @@ class ExercisesController < ApplicationController
 
   def show
   end
-  
+
   def create
     @exercise = Exercise.new(exercise_params)
     respond_to do |format|
@@ -51,7 +51,7 @@ class ExercisesController < ApplicationController
 
   private
     def exercise_params
-      params.require(:exercise).permit(:calories_burned_per_minute, :duration)
+      params.require(:exercise).permit(:calories_burned_per_minute, :duration, :exercise_type_id)
     end
 
     def set_exercise
