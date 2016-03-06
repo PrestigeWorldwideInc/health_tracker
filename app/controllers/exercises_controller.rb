@@ -8,6 +8,12 @@ class ExercisesController < ApplicationController
     @exercise = Exercise.new
   end
 
+  def edit
+  end
+
+  def show
+  end
+  
   def create
     @exercise = Exercise.new(exercise_params)
     respond_to do |format|
