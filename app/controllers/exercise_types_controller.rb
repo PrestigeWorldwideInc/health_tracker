@@ -43,6 +43,14 @@ class ExerciseTypesController < ApplicationController
     end
   end
 
+  def destroy
+    @exercise_type.destroy
+    respond_to do |format|
+      format.html { redirect_to exercise_types_url, notice: 'Step count was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   private
     def exercise_type_params
       params.require(:exercise_type).permit(:name)

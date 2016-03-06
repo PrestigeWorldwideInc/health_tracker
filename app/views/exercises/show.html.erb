@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calories burned per minute:</strong>
+  <%= @exercise.calories_burned_per_minute %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @exercise.duration %>
+</p>
+
+<p>
+  <strong>Exercise Type:</strong>
+  <%= @exercise.exercise_type_id %>
+</p>
+
+<div class="actions">
+  <%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+  <%= link_to 'Back', exercises_path %>
+</div>
+
+<div class="actions">
+  <%= link_to "Homepage", root_path %>
+</div>

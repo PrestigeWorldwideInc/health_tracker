@@ -15,6 +15,9 @@
       <tr>
         <td><%= choloric_intake.calories %></td>
         <td><%= choloric_intake.date %></td>
+        <td><%= link_to 'Show', choloric_intake %></td>
+        <td><%= link_to 'Edit', edit_choloric_intake_path(choloric_intake) %></td>
+        <td><%= link_to 'Destroy', choloric_intake, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

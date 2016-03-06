@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @choloric_intake.calories %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @choloric_intake.date %>
+</p>
+<div class="actions">
+  <%= link_to 'Edit', edit_choloric_intake_path(@choloric_intake) %> |
+  <%= link_to 'Back', choloric_intake_path %>
+</div>
+
+<div class="actions">
+  <%= link_to 'Homepage', root_path %>
+</div>
