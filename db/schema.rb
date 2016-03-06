@@ -36,13 +36,6 @@ ActiveRecord::Schema.define(version: 20160306195303) do
     t.integer  "age"
   end
 
-  create_table "step_counters", force: :cascade do |t|
-    t.integer  "steps_taken"
-    t.date     "date"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
   create_table "step_counts", force: :cascade do |t|
     t.integer  "steps_taken"
     t.date     "date"
