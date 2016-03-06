@@ -9,6 +9,12 @@ class CholoricIntakesController < ApplicationController
     @choloric_intake = CholoricIntake.new
   end
 
+  def edit
+  end
+
+  def show
+  end
+
   def create
     @choloric_intake = CholoricIntake.new(choloric_intake_params)
 

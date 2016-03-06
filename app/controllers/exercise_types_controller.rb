@@ -1,6 +1,6 @@
 class ExerciseTypesController < ApplicationController
   before_action :set_exercise_type, only: [:show, :edit, :update, :destroy]
-  
+
   def index
     @exercise_types = ExerciseType.all
   end
@@ -9,8 +9,15 @@ class ExerciseTypesController < ApplicationController
     @exercise_type = ExerciseType.new
   end
 
+  def edit
+  end
+
+  def show
+  end
+
   def create
     @exercise_type = Exercise_type.new(exercise_type_params)
+
     respond_to do |format|
       if @exercise_type.save
         format.html { redirect_to @exercise_type, notice: 'Exercise type was successfully created.' }
