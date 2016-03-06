@@ -10,16 +10,23 @@
       </ul>
     </div>
   <% end %>
-<<<<<<< HEAD
 
   <div class="field">
-    <%= f.option  %><br>
-    <%= f.text_field :calories_burned_per_minute %>
+    <%= f.label :name, "Jogging" %>
+    <%= f.radio_button :name, "Jogging", :value => "Jogging" %>
+    <%= f.label :name, "Swimming" %>
+    <%= f.radio_button :name, "Swimming", :value => "Swimming" %>
+    <%= f.label :name, "Cycling" %>
+    <%= f.radio_button :name, "Cycling", :value => "Cycling" %>
+    <%= f.label :name, "Muscle Training" %>
+    <%= f.radio_button :name, "Muscle Training", :value => "Muscle Training " %>
   </div>
 
-=======
-  
->>>>>>> b5ab1653164b550b9e21cf0376ff41bcf1c872e7
+  <!-- <div class="field">
+    <%= f.label :age, "Age" %>
+    <%= f.number_field :age %>
+  </div> -->
+
   <div class="field">
     <%= f.label :exercise_type_id %><br>
     <%= f.number_field :exercise_type_id %>
