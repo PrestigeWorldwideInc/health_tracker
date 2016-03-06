@@ -16,7 +16,7 @@ class ExerciseTypesController < ApplicationController
   end
 
   def create
-    @exercise_type = Exercise_type.new(exercise_type_params)
+    @exercise_type = ExerciseType.new(exercise_type_params)
 
     respond_to do |format|
       if @exercise_type.save

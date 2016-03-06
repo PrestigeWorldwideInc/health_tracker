@@ -7,3 +7,7 @@ one:
 two:
   lbs: 180.0
   date: 2016-02-03
+
+three:
+    lbs: 180.0
+    date: 2016-05-05
