@@ -1,15 +1,15 @@
-# require 'test_helper'
-#
-# class WeightsControllerTest < ActionController::TestCase
-#   setup do
-#     @weight = weights(:one)
-#   end
-#
-#   test "should get index" do
-#     get :index
-#     assert_response :success
-#     assert_not_nil assigns(:weights)
-#   end
+require 'test_helper'
+
+class WeightsControllerTest < ActionController::TestCase
+  setup do
+    @weight = weights(:one)
+  end
+
+  test "should get index" do
+    get :index
+    assert_response :success
+    assert_not_nil assigns(:weights)
+  end
 #
 #   test "should get new" do
 #     get :new
@@ -46,4 +46,4 @@
 #
 #     assert_redirected_to weights_path
 #   end
-# end
+end
