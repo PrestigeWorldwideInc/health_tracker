@@ -12,8 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :exercise_type_id %><br>
-    <%= f.number_field :exercise_type_id %>
+    <%= f.label :name, "Jogging" %>
+    <%= f.radio_button :name, "Jogging", :value => "Jogging" %>
+    <%= f.label :name, "Swimming" %>
+    <%= f.radio_button :name, "Swimming", :value => "Swimming" %>
+    <%= f.label :name, "Cycling" %>
+    <%= f.radio_button :name, "Cycling", :value => "Cycling" %>
+    <%= f.label :name, "Muscle Training" %>
+    <%= f.radio_button :name, "Muscle Training", :value => "Muscle Training " %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age, "Age" %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :exercise_type_id, "Low" %>
+    <%= f.radio_button :exercise_type_id, :value => "Low" %>
+    <%= f.label :exercise_type_id, "Medium" %>
+    <%= f.radio_button :exercise_type_id, :value => "Medium" %>
+    <%= f.label :exercise_type_id, "High" %>
+    <%= f.radio_button :exercise_type_id, :value => "High" %>
   </div>
   <div class="field">
     <%= f.label :duration %><br>
