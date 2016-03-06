@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing exercise_types</h1>
+<h1>Listing Exercise Types</h1>
 
 <table>
   <thead>
@@ -14,6 +14,9 @@
     <% @exercise_types.each do |exercise_type| %>
       <tr>
         <td><%= exercise_type.name %></td>
+        <td><%= link_to 'Show', exercise_type %></td>
+        <td><%= link_to 'Edit', edit_exercise_type_path(exercise_type) %></td>
+        <td><%= link_to 'Destroy', exercise_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -25,5 +28,5 @@
 <p><%= link_to 'New Exercise Type', new_exercise_type_path %></p>
 </div>
 <div class="actions">
-<p><%= link_to "Back to the Homepage", root_path %>
+<p><%= link_to "Homepage", root_path %>
 </div>
