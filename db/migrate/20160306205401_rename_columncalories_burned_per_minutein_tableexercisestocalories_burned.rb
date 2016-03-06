@@ -1,5 +1,5 @@
 class RenameColumncaloriesBurnedPerMinuteinTableexercisestocaloriesBurned < ActiveRecord::Migration
   def change
-    rename_column :exercises, :calories_burned_per_minute, :calories_burned
+    rename_column :exercises, :calories_burned, :calories_burned
   end
 end
