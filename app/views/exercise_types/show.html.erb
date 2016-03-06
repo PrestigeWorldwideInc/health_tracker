@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Exercise Types:</strong>
+  <%= @exercise_type.name %>
+</p>
+
+<div class="actions">
+<%= link_to 'Edit', edit_exercise_type_path(@exercise_type) %> |
+<%= link_to 'Back', exercise_types_path %>
+</div>

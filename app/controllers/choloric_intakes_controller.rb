@@ -29,18 +29,6 @@ class CholoricIntakesController < ApplicationController
     end
   end
 
-  def update
-    respond_to do |format|
-      if @choloric_intake.update(choloric_intake_params)
-        format.html { redirect_to @choloric_intake, notice: 'Calories was successfully updated.' }
-        format.json { render :show, status: :ok, location: @choloric_intake }
-      else
-        format.html { render :edit }
-        format.json { render json: @choloric_intake.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
   # DELETE /choloric_intakes/1
   # DELETE /choloric_intakes/1.json
   def destroy
