@@ -6,21 +6,24 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
-# 10.times do |i|
-#   CholoricIntake.create(calories: rand(100.0..1000.0), date: (Time.now - 1))
-# end
+#
 
 ExerciseType.create(name: "Low")
 ExerciseType.create(name: "Medium")
 ExerciseType.create(name: "High")
-# 10.times do |i|
-#   Exercise.create(calories_burned: rand(9.99..70.0), exercise_type_id: rand(1..2), duration: rand(1.0..60.0))
-# end
-#
-# 10.times do |i|
-#   StepCount.create(steps: rand(1..400), date: (Time.now - 1))
-# end
-#
-# 10.times do |i|
-#   Weight.new(lbs: rand(100..300), date: (Time.now - 1))
-# end
+
+10.times do |i|
+  CholoricIntake.create(calories: rand(100.0..1000.0), date: (Time.now - 1))
+end
+
+10.times do |i|
+  StepCount.create(steps_taken: rand(1..400), date: (Time.now - 1))
+end
+
+10.times do |i|
+  Weight.new(lbs: rand(100..300), date: (Time.now - 1))
+end
+
+10.times do |i|
+  Exercise.create(calories_burned: rand(9.99..70.0), exercise_type_id: rand(1..2), duration: rand(1.0..60.0), name: ["cycling", "jogging", "weight training"].sample, exertion: rand["Low", "Medium", "High"].sample)
+end
