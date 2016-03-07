@@ -28,12 +28,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :exercise_type_id, "Low" %>
-    <%= f.radio_button :exercise_type_id, :value => "Low" %>
-    <%= f.label :exercise_type_id, "Medium" %>
-    <%= f.radio_button :exercise_type_id, :value => "Medium" %>
-    <%= f.label :exercise_type_id, "High" %>
-    <%= f.radio_button :exercise_type_id, :value => "High" %>
+    <p> Rate your level of exertion </p>
+    <%= f.label :exertion, "Low" %>
+    <%= f.radio_button :exertion, "Low" %>
+    <%= f.label :exertion, "Medium"  %>
+    <%= f.radio_button :exertion, "Medium" %>
+    <%= f.label :exertion, "High" %>
+    <%= f.radio_button :exertion, "High" %>
   </div>
   <div class="field">
     <%= f.label :duration %><br>

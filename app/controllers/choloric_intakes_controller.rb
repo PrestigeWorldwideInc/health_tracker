@@ -13,6 +13,7 @@ class CholoricIntakesController < ApplicationController
   end
 
   def show
+    @total_calories = CholoricIntake.total_calories
   end
 
   def create
@@ -36,6 +37,18 @@ class CholoricIntakesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to choloric_intakes_url, notice: 'Step count was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+  def update
+    respond_to do |format|
+      if @choloric_intake.update(choloric_intake_params)
+        format.html { redirect_to @choloric_intake, notice: 'Calories were successfully updated.' }
+        format.json { render :show, status: :ok, location: @choloric_intake }
+      else
+        format.html { render :edit }
+        format.json { render json: @choloric_intake.errors, status: :unprocessable_entity }
+      end
     end
   end
 

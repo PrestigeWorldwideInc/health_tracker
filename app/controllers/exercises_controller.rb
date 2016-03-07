@@ -12,6 +12,7 @@ class ExercisesController < ApplicationController
   end
 
   def show
+    @heart_rate = Exercise.heart_rate
   end
 
   def create
@@ -51,7 +52,7 @@ class ExercisesController < ApplicationController
 
   private
     def exercise_params
-      params.require(:exercise).permit(:calories_burned, :duration, :exercise_type_id, :name)
+      params.require(:exercise).permit(:calories_burned, :duration, :exercise_type_id, :name, :age, :exertion)
     end
 
     def set_exercise
